@@ -63,15 +63,35 @@ $$(document).on('click', '#test', function (e) {
     myApp.alert('Here comes test click');
     launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
         var app;
-        myApp.alert('isAvailable');
-        myApp.alert(isAvailable);
+        //myApp.alert('isAvailable');
+       // myApp.alert(isAvailable);
         if(isAvailable){
             app = launchnavigator.APP.GOOGLE_MAPS;
         }else{
             console.warn("Google Maps not available - falling back to user selection");
             app = launchnavigator.APP.USER_SELECT;
         }
-        launchnavigator.navigate("[13.0408454,80.23]", {
+        launchnavigator.navigate([13.0408454,80.23], {
+            app: app,
+            start: "13.0408454,80.2346172"
+        });
+    });
+})
+
+
+$$(document).on('click', '#test_1', function (e) {
+    myApp.alert('Here comes test click');
+    launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
+        var app;
+        //myApp.alert('isAvailable');
+       // myApp.alert(isAvailable);
+        if(!isAvailable){
+            app = launchnavigator.APP.GOOGLE_MAPS;
+        }else{
+            console.warn("Google Maps not available - falling back to user selection");
+            app = launchnavigator.APP.USER_SELECT;
+        }
+        launchnavigator.navigate([13.0408454,80.23], {
             app: app,
             start: "13.0408454,80.2346172"
         });
