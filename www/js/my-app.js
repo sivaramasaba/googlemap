@@ -88,8 +88,9 @@ $$(document).on('click', '#test_1', function (e) {
         if(!isAvailable){
             app = launchnavigator.APP.GOOGLE_MAPS;
         }else{
+            myApp.alert('else');
             console.warn("Google Maps not available - falling back to user selection");
-            app = launchnavigator.APP.USER_SELECT;
+          //  app = launchnavigator.APP.USER_SELECT;
             window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23');
         }
        /* launchnavigator.navigate([13.0408454,80.23], {
