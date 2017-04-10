@@ -71,8 +71,9 @@ $$(document).on('click', '#test', function (e) {
             console.warn("Google Maps not available - falling back to user selection");
             app = launchnavigator.APP.USER_SELECT;
         }
-        launchnavigator.navigate("London, UK", {
-            app: app
+        launchnavigator.navigate("[13.0408454,80.23]", {
+            app: app,
+            start: "13.0408454,80.2346172"
         });
     });
 })
