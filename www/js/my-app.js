@@ -214,12 +214,12 @@ $$(document).on('click', '#test', function (e) {
 */
 
 $$(document).on('click', '#test_5', function (e) {
-    myApp.alert('Here comes test click');
-    launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
-        var app;
+  //  myApp.alert('Here comes test click');
+   // launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
+      //  var app;
         //window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23');
-        myApp.alert('isAvailable');
-        myApp.alert(isAvailable);
+      //  myApp.alert('isAvailable');
+      //  myApp.alert(isAvailable);
        /* if(!isAvailable){
             app = launchnavigator.APP.GOOGLE_MAPS;
         }else{
@@ -232,5 +232,34 @@ $$(document).on('click', '#test_5', function (e) {
             app: app,
             start: "13.0408454,80.2346172"
         });*/
-    });
+  //  });
+    
+      myApp.alert('Here comes whatsapp click');
+   
+    var platform = device.platform.toLowerCase();
+    var scheme ="";
+    myApp.alert("Platform : "+ platform);
+    if(platform == "android") {
+         scheme = 'com.google.android.apps.maps';
+    } else if(platform == "ios") {
+         scheme = 'whatsapp';
+        // scheme = 'comgooglemaps';
+    } else {
+         scheme = 'comgooglemaps://';
+    }
+    
+   myApp.alert("Check App availability"+ scheme);
+    appAvailability.check(
+        scheme,       // URI Scheme or Package Name 
+        function() {  // Success callback 
+            //console.log(scheme + ' is available :)');
+            myApp.alert("App Available");
+        },
+        function() {  // Error callback 
+            //console.log(scheme + ' is not available :(');
+            myApp.alert("App not Available");
+        }
+    );
+    
+    
 })
