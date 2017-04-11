@@ -243,6 +243,7 @@ $$(document).on('click', '#test_5', function (e) {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
          scheme = 'whatsapp';
+         scheme = 'maps://';
         // scheme = 'comgooglemaps';
     } else {
          scheme = 'comgooglemaps://';
