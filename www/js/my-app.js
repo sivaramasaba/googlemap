@@ -70,7 +70,7 @@ $$(document).on('click', '#test', function (e) {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
          scheme = 'comgooglemaps';
-         scheme = 'maps';
+         scheme = 'maps://';
          //scheme = 'comgooglemaps://';
     } else {
         scheme = 'comgooglemaps';
