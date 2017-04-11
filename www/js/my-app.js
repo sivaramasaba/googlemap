@@ -71,6 +71,8 @@ $$(document).on('click', '#test', function (e) {
     } else if(platform == "ios") {
          scheme = 'comgooglemaps';
          //scheme = 'comgooglemaps://';
+    } else {
+        scheme = 'comgooglemaps';
     }
     
     myApp.alert("Check App availability scheme" + scheme);
@@ -111,6 +113,8 @@ $$(document).on('click', '#test_1', function (e) {
     } else if(platform == "ios") {
          scheme = 'comgooglemaps://';
         
+    } else {
+         scheme = 'comgooglemaps://';
     }
     
    // myApp.alert("Check App availability");
@@ -162,7 +166,7 @@ $$(document).on('click', '#test', function (e) {
     });
 })
 */
-
+/*
 $$(document).on('click', '#test_1', function (e) {
     myApp.alert('Here comes test click');
     launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
@@ -181,6 +185,6 @@ $$(document).on('click', '#test_1', function (e) {
        /* launchnavigator.navigate([13.0408454,80.23], {
             app: app,
             start: "13.0408454,80.2346172"
-        });*/
+        });
     });
-})
+})*/
