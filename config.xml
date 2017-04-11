@@ -16,6 +16,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="*" />
+	<allow-navigation href="whatsapp://*/*" />
     <platform name="android">
         <preference name="android-minSdkVersion" value="14" />
         <allow-intent href="market:*" />
@@ -34,22 +35,9 @@
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="~3.2.2" />
 	
 	<platform name="ios">
-		  <framework src="MapKit.framework" />
-		<framework src="CoreLocation.framework" />
-
-		<config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+			<config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
 		  <array>
-			<string>citymapper</string>
 			<string>comgooglemaps</string>
-			<string>navigon</string>
-			<string>transit</string>
-			<string>waze</string>
-			<string>yandexnavi</string>
-			<string>uber</string>
-			<string>tomtomhome</string>
-			<string>com.sygic.aura</string>
-			<string>here-route</string>
-			<string>moovit</string>
 			<string>whatsapp</string>
 		  </array>
 		</config-file>
