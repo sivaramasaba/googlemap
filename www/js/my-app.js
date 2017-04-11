@@ -69,7 +69,7 @@ $$(document).on('click', '#test', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-         scheme = 'comgooglemaps';
+        scheme = 'comgooglemaps://';
     }
     
    // myApp.alert("Check App availability");
