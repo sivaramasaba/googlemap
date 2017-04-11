@@ -148,7 +148,7 @@ $$(document).on('click', '#test_1', function (e) {
 
 
 $$(document).on('click', '#test_2', function (e) {
-   // myApp.alert('Here comes test_1 click');
+    myApp.alert('Here comes whatsapp click');
    
     var platform = device.platform.toLowerCase();
     var scheme ="";
@@ -156,13 +156,13 @@ $$(document).on('click', '#test_2', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-         scheme = 'whatsapp://';
+         scheme = 'whatsapp';
         
     } else {
          scheme = 'comgooglemaps://';
     }
     
-   // myApp.alert("Check App availability");
+   myApp.alert("Check App availability"+ scheme);
     appAvailability.check(
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
