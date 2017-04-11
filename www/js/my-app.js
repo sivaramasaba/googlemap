@@ -59,6 +59,46 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
     myApp.alert('Here comes About page');
 })
+
+$$(document).on('click', '#test', function (e) {
+    myApp.alert('Here comes test click');
+   
+    var platform = device.platform.toLowerCase();
+    var scheme ="";
+    myApp.alert("Platform : "+ platform);
+    if(platform == "android") {
+         scheme = 'com.google.android.apps.maps';
+    } else if(platform == "ios") {
+         scheme = 'comgooglemaps';
+    }
+    
+    myApp.alert("Check App availability");
+    appAvailability.check(
+        scheme,       // URI Scheme or Package Name 
+        function() {  // Success callback 
+            //console.log(scheme + ' is available :)');
+             myApp.alert("App Available");
+             if(platform == "android") {
+                 //scheme = 'com.google.android.apps.maps';
+                 var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
+                 window.open("geo:"+addressLongLat);
+             } else if(platform == "ios") {
+                // scheme = 'comgooglemaps';
+                 var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
+                 window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
+             }
+        },
+        function() {  // Error callback 
+            //console.log(scheme + ' is not available :(');
+            myApp.alert("App not Available");
+             var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
+             window.open("http://maps.google.com/?q="+addressLongLat, '_system');
+        }
+    );
+})
+
+
+/*
 $$(document).on('click', '#test', function (e) {
     myApp.alert('Here comes test click');
     launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
@@ -77,7 +117,7 @@ $$(document).on('click', '#test', function (e) {
         });
     });
 })
-
+*/
 
 $$(document).on('click', '#test_1', function (e) {
     myApp.alert('Here comes test click');
