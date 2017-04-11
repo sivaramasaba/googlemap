@@ -157,7 +157,7 @@ $$(document).on('click', '#test_2', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-         scheme = 'whatsapp://';
+         scheme = 'whatsapp';
         
     } else {
          scheme = 'comgooglemaps://';
