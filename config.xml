@@ -31,7 +31,7 @@
     <plugin name="cordova-plugin-device" spec="~1.1.5" />
 	<plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
 	
-	<plugin name="cordova-plugin-appavailability" spec="~0.4.2" />
+	<plugin name="cordova-plugin-appavailability" spec="~0.4.2">
 		<variable name="LSApplicationQueriesSchemes" value="whatsapp" />
 	</plugin>
 
