@@ -38,6 +38,7 @@
 		<framework src="CoreLocation.framework" />
 
 		<config-file target="*-Info.plist">
+		  <key>LSApplicationQueriesSchemes</key>
 		  <array>
 			<string>citymapper</string>
 			<string>comgooglemaps</string>
@@ -50,6 +51,7 @@
 			<string>com.sygic.aura</string>
 			<string>here-route</string>
 			<string>moovit</string>
+			<string>whatsapp</string>
 		  </array>
 		</config-file>
 	</platform>
