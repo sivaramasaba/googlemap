@@ -146,6 +146,51 @@ $$(document).on('click', '#test_1', function (e) {
 })
 
 
+
+$$(document).on('click', '#test_2', function (e) {
+   // myApp.alert('Here comes test_1 click');
+   
+    var platform = device.platform.toLowerCase();
+    var scheme ="";
+    myApp.alert("Platform : "+ platform);
+    if(platform == "android") {
+         scheme = 'com.google.android.apps.maps';
+    } else if(platform == "ios") {
+         scheme = 'whatsapp://';
+        
+    } else {
+         scheme = 'comgooglemaps://';
+    }
+    
+   // myApp.alert("Check App availability");
+    appAvailability.check(
+        scheme,       // URI Scheme or Package Name 
+        function() {  // Success callback 
+            //console.log(scheme + ' is available :)');
+            myApp.alert("App Available");
+            var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
+            var addressLongLat = '13.0408454,80.2346172';
+            if(platform == "android") {
+                //scheme = 'com.google.android.apps.maps';
+               // window.open("geo:"+addressLongLat+"?q=13.0408454,80.2346172");
+                window.open("http://maps.google.com/?q="+addressLongLat, '_system');
+            } else if(platform == "ios") {
+                // scheme = 'comgooglemaps';
+               window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
+                //window.open("http://maps.google.com/?q="+addressLongLat, '_system');
+            }
+        },
+        function() {  // Error callback 
+            //console.log(scheme + ' is not available :(');
+            myApp.alert("App not Available");
+             var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
+            var addressLongLat = '13.0408454,80.2346172';
+             window.open("http://maps.google.com/?q="+addressLongLat, '_system');
+        }
+    );
+})
+
+
 /*
 $$(document).on('click', '#test', function (e) {
     myApp.alert('Here comes test click');
