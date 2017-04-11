@@ -76,12 +76,12 @@ $$(document).on('click', '#test', function (e) {
         scheme = 'comgooglemaps';
     }
     
-   // myApp.alert("Check App availability scheme" + scheme);
+    myApp.alert("Check App availability scheme" + scheme);
     appAvailability.check(
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
             //console.log(scheme + ' is available :)');
-          //  myApp.alert("App Available");
+            myApp.alert("App Available");
             var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
             var addressLongLat = '13.0408454,80.2346172';
             if(platform == "android") {
