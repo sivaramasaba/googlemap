@@ -112,7 +112,7 @@ $$(document).on('click', '#test_1', function (e) {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
          scheme = 'comgooglemaps://';
-         scheme = 'http://maps.apple.com/';
+        //scheme = 'http://maps.apple.com/';
         
     } else {
          scheme = 'comgooglemaps://';
@@ -157,8 +157,8 @@ $$(document).on('click', '#test_2', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-         scheme = 'whatsapp';
-        
+         scheme = 'whatsapp://';
+        // scheme = 'comgooglemaps';
     } else {
          scheme = 'comgooglemaps://';
     }
