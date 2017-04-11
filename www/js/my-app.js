@@ -132,8 +132,8 @@ $$(document).on('click', '#test_1', function (e) {
                 window.open("http://maps.google.com/?q="+addressLongLat, '_system');
             } else if(platform == "ios") {
                 // scheme = 'comgooglemaps';
-               // window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
-                window.open("http://maps.google.com/?q="+addressLongLat, '_system');
+                window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
+               // window.open("http://maps.google.com/?q="+addressLongLat, '_system');
             }
         },
         function() {  // Error callback 
