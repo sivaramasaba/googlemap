@@ -28,6 +28,6 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <gap:plugin name="com.ohh2ahh.plugins.appavailability" />
     <plugin name="cordova-plugin-device" spec="~1.1.5" />
+    <plugin name="cordova-plugin-appavailability" spec="~0.4.2" />
 </widget>
