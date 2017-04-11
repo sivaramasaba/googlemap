@@ -25,13 +25,15 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
         <preference name="BackupWebStorage" value="none" />
-		 <config-file parent="LSApplicationQueriesSchemes" target="*-Info.plist">
-            <array>
-                <string>comgooglemaps</string>
-                <string>whatsapp</string>
-            </array>
-        </config-file>
     </platform>
+	
+	<config-file platform="ios" target="*-Info.plist" parent="LSApplicationQueriesSchemes" overwrite="true">  
+		 <array>
+			<string>comgooglemaps</string>
+			<string>whatsapp</string>
+		</array>
+	</config-file>  
+  
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
