@@ -65,22 +65,23 @@ $$(document).on('click', '#test', function (e) {
    
     var platform = device.platform.toLowerCase();
     var scheme ="";
-    myApp.alert("Platform : "+ platform);
+    //myApp.alert("Platform : "+ platform);
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
          scheme = 'comgooglemaps';
+         scheme = 'maps://';
          //scheme = 'comgooglemaps://';
     } else {
         scheme = 'comgooglemaps';
     }
     
-    myApp.alert("Check App availability scheme" + scheme);
+   // myApp.alert("Check App availability scheme" + scheme);
     appAvailability.check(
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
             //console.log(scheme + ' is available :)');
-            myApp.alert("App Available");
+          //  myApp.alert("App Available");
             var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
             var addressLongLat = '13.0408454,80.2346172';
             if(platform == "android") {
@@ -93,7 +94,7 @@ $$(document).on('click', '#test', function (e) {
         },
         function() {  // Error callback 
             //console.log(scheme + ' is not available :(');
-            myApp.alert("App not Available");
+           // myApp.alert("App not Available");
              var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
             var addressLongLat = '13.0408454,80.2346172';
              window.open("http://maps.google.com/?q="+addressLongLat, '_system');
@@ -234,7 +235,7 @@ $$(document).on('click', '#test_5', function (e) {
         });*/
   //  });
     
-      myApp.alert('Here comes whatsapp click');
+     // myApp.alert('Here comes whatsapp click');
    
     var platform = device.platform.toLowerCase();
     var scheme ="";
@@ -242,8 +243,8 @@ $$(document).on('click', '#test_5', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-         scheme = 'whatsapp';
-         scheme = 'maps://';
+         scheme = 'whatsapp://';
+        
         // scheme = 'comgooglemaps';
     } else {
          scheme = 'comgooglemaps://';
