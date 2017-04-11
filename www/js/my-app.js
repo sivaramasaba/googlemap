@@ -112,12 +112,13 @@ $$(document).on('click', '#test_1', function (e) {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
          scheme = 'comgooglemaps://';
+         scheme = 'http://maps.apple.com/';
         
     } else {
          scheme = 'comgooglemaps://';
     }
     
-   // myApp.alert("Check App availability");
+     myApp.alert("Check App availability"+ scheme);
     appAvailability.check(
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
