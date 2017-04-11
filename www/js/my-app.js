@@ -212,14 +212,14 @@ $$(document).on('click', '#test', function (e) {
     });
 })
 */
-/*
-$$(document).on('click', '#test_1', function (e) {
+
+$$(document).on('click', '#test_5', function (e) {
     myApp.alert('Here comes test click');
     launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
         var app;
-        window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23');
-        //myApp.alert('isAvailable');
-       // myApp.alert(isAvailable);
+        //window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23');
+        myApp.alert('isAvailable');
+        myApp.alert(isAvailable);
        /* if(!isAvailable){
             app = launchnavigator.APP.GOOGLE_MAPS;
         }else{
@@ -231,6 +231,6 @@ $$(document).on('click', '#test_1', function (e) {
        /* launchnavigator.navigate([13.0408454,80.23], {
             app: app,
             start: "13.0408454,80.2346172"
-        });
+        });*/
     });
-})*/
+})
