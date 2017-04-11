@@ -267,7 +267,7 @@ $$(document).on('click', '#test_5', function (e) {
 })
 
 
-$$(document).on('click', '#test_5', function (e) {
+$$(document).on('click', '#test_6', function (e) {
   //  myApp.alert('Here comes test click');
    launchnavigator.isAppAvailable(launchnavigator.APP.GOOGLE_MAPS, function(isAvailable){
         var app;
