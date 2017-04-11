@@ -69,10 +69,11 @@ $$(document).on('click', '#test', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-        scheme = 'comgooglemaps://';
+         scheme = 'comgooglemaps';
+         scheme = 'comgooglemaps://';
     }
     
-   // myApp.alert("Check App availability");
+    myApp.alert("Check App availability scheme" + scheme);
     appAvailability.check(
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
@@ -108,7 +109,8 @@ $$(document).on('click', '#test_1', function (e) {
     if(platform == "android") {
          scheme = 'com.google.android.apps.maps';
     } else if(platform == "ios") {
-         scheme = 'comgooglemaps';
+         scheme = 'comgooglemaps://';
+        
     }
     
    // myApp.alert("Check App availability");
