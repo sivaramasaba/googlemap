@@ -57,15 +57,20 @@ $$(document).on('click', '#test', function (e) {
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
             var addressLongLat = '53.22921909999999,-4.129498000000012';
+            var addressLongLat = '53.22921,-4.12949';
             if(platform == "android") {
                 window.open("geo:"+addressLongLat+"?q="+addressLongLat);
             } else if(platform == "ios") {
-                window.open("http://maps.apple.com/?q="+addressLongLat, '_system');
+                var mapLocationUrl = 'http://maps.apple.com/?q='+addressLongLat+'&ll='+addressLongLat;
+               // var ref = window.open(encodeURI(mapLocationUrl), '_system', 'location=no');
+                window.open(encodeURI(mapLocationUrl), '_system');
+                //window.open("http://maps.apple.com/?ll="+addressLongLat, '_system');
             }
         },
         function() {  // Error callback 
             var addressLongLat = $(this).attr('lat')+','+$(this).attr('lng');
             var addressLongLat = '53.22921909999999,-4.129498000000012';
+            var addressLongLat = '53.22921,-4.12949';
             window.open("http://maps.google.com/?q="+addressLongLat, '_system');
         }
     );
