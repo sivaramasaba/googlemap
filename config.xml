@@ -33,7 +33,12 @@
 			<string>whatsapp</string>
 		</array>
 	</config-file> 
-  
+  <platform name="ios">
+        <icon src="www/res/icon/ios/icon-57.png" width="60" height="60" />
+        <icon src="www/res/icon/ios/icon-57-2x.png" width="120" height="120" />
+        <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
+    </platform>
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
