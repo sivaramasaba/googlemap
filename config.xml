@@ -32,9 +32,6 @@
 			<string>comgooglemaps</string>
 			<string>whatsapp</string>
 		</array>
-	</config-file> 
-	<config-file platform="ios" target="*-Info.plist" parent="CFBundleIdentifier" overwrite="true">  
-		<string>com.hotcourses.group.wubaseappid_test</string>
 	</config-file>  	
   
     <preference name="DisallowOverscroll" value="true" />
