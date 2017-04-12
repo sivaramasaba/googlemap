@@ -50,18 +50,17 @@
     <div class="views">
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
-            <!-- Top Navbar-->
+            Top Navbar
             <div class="navbar">
                 <div class="navbar-inner">
-                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding">Awesome App</div>
-                    <div class="right">
-                        <!--
+                   <!--   We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding">Google Map App</div>
+                    <!-- <div class="right">
                           Right link contains only icon - additional "icon-only" class
                           Additional "open-panel" class tells app to open panel when we click on this link
-                        -->
+                       
                         <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
@@ -71,129 +70,19 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-                            <p>Page content goes here</p>
-                            <!-- Link to another page -->
-                            <!--  <a href="about.html">About app</a><br><br>
-                            <a href="javascript:window.open('geo:13.0408454,80.2346172?q=13.0408454,80.2346172');">test android</a><br><br>
-                            <a href="javascript:window.open('http://maps.apple.com/?q=13.0408454,80.2346172,13.0408454,80.23');">test ios navigation 1</a> <br><br>
-                            <a href="javascript:window.open('http://maps.apple.com/?saddr=13.0408454,80.2346172&daddr=13.0408454,80.23');">test android navigation 2</a>
-                             <br><br>
-                             <a href="javascript:window.open('http://maps.apple.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23');">test android navigation 3</a>
-                            <br><br>
-                             <a href="javascript:void(0)" id="test">test available</a>
-                            
-                             <br><br>
-                            <h4>My test Path</h4>
-                            <a href="javascript:window.open('https://maps.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23')">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,80.237&path=color:0x0000ff|weight:5|13.0408454,80.2346172|13.0406082,80.23384419999999|13.0408529,80.2321201|13.0405017, 80.2319294|13.0409462,80.2301394| 13.0409192,80.2299952|13.0408454,80.23" /></a> 
-                            
-                            
-                            
-                            <br><br> -->
-                            
-                             <a href="javascript:void(0)" id="test_5">Check for whatsapp available </a> <br><br>
-                             <a href="javascript:void(0)" id="test_6">My check </a> <br><br>
-                            
-                            <!-- <a href="javascript:void(0)" id="test_2">Check for whatsapp available 2</a> <br><br>-->
-                            
-                            <h4>Simple Map</h4>
+                            <h4>Description</h4>
+                            <p>1. We have displayed the google map image.</p>
+                            <p>2. We have also added bubble for location bangor university in google map image.</p>
+                            <p>3. If We click the image, its open default map app and show bubble in bangor university.</p>
+                            <p>4. Suppose, if user uninstall the default map app, its tell user to restore the default map.</p>
+                            <!-- <h4>Simple Map</h4> -->
                             <a href="javascript:void(0)" id="test" lat="13.0408454" lng="80.2346172">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=13.0408454,80.2346172&zoom=12&scale=1&size=300x300&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172" /></a>
+                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=53.22921909999999,-4.129498000000012&zoom=15&scale=1&size=300x300&markers=color:blue%7Clabel:A%7C53.22921909999999,-4.129498000000012" /></a>
                             
                             <br><br>
-                            
-                           <!--  <h4>Simple Map open browser</h4>
-                            <a href="javascript:void(0)" id="test_1" lat="13.0408454" lng="80.2346172">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=13.0408454,80.2346172&zoom=12&scale=1&size=300x300&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172" /></a>
-                            
-                            
-                             <br><br>-->
-                            
-                           <!--   <h4>Simple Map open browser whatsapp check</h4>
-                            <a href="javascript:void(0)" id="test_2" lat="13.0408454" lng="80.2346172">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=13.0408454,80.2346172&zoom=12&scale=1&size=300x300&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172" /></a>
-                            
-                           <!-- <h4>Simple Map With Multiple Marker</h4>
-                            <a href="javascript:void(0)" id="test">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,80.237" /></a>
-                            
-                            <br><br>
-                            
-                            <h4>Simple Map With Multiple Marker if not available</h4>
-                            <a href="javascript:void(0)" id="test_1">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,80.237" /></a>
-                            
-                            <br><br>
-                            
-                            -->
-                           <!--  <h4>Simple Map With Path</h4>
-                            <a href="javascript:window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23')">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?center=13.0408454,80.2346172&zoom=16&scale=1&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,80.237&path=color:0x0000ff|weight:5|13.0408454,80.2346172|13.0408454,80.23" /></a>
-                            
-                            -->
-                                      
-                            
-                            
-                            <!--  <br><br>
-                            <h4>Simple Map With Path</h4>
-                            <a href="javascript:window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23')">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,80.237&path=color:0x0000ff|weight:5|13.0408454,80.2346172|13.0408454,80.23" /></a>
-                            
-                            
-                             <br><br> -->
-                           <!--  <h4>Simple Map With test Path</h4>
-                            <a href="javascript:window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23')">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?&size=300x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,80.237&path=color:0x0000ff|weight:5|13.0408454,80.2346172|13.0406082,80.23384419999999|13.0408529,80.2321201|13.0405017, 80.2319294|13.0409462,80.2301394| 13.0409192,80.2299952|13.0408454,80.23" /></a> 
-                            
-                             <br><br>-->
-                            
-                            <!-- 
-                            <h4>Simple Map With test js</h4>
-                            <a href="javascript:window.open('https://www.google.com/maps/dir/13.0408454,80.2346172/13.0408454,80.23')">
-                                <img src="" id="myimage"/></a> 
-                           
-                             <br><br>
-                            <h4>Simple Map </h4>
-                            <a href="javascript:window.open('https://maps.google.com?q=13.0408454,80.2346172')">
-                                <img src="https://maps.googleapis.com/maps/api/staticmap?size=500x300&maptype=roadmap&markers=color:blue%7Clabel:A%7C13.0408454,80.2346172&markers=color:green%7Clabel:B%7C13.0408454,80.23&markers=color:red%7Clabel:C%7C13.0408454,82.237" /></a>
-                            
-                           
-                             
-                            <br><br>
-                            <a href="javascript:window.open('https://www.google.com/maps/dir//Albany,+NY/')"><img src="https://maps.googleapis.com/maps/api/staticmap?center=Albany,+NY&zoom=13&scale=false&size=600x300&maptype=roadmap&format=png&visual_refresh=true" alt="Google Map of Albany, NY"></a>
-                            
-                            
-                            <br><br>
-                            <a href="javascript:window.open('https://www.google.com/maps/dir/40.718217,-73.998284/40.711614,-74.012318')" target="_blank">Direction</a>
-                            
-                            
-                            <br><br>
-                            <a href="javascript:window.open('https://maps.google.com?q=40.718217,-73.998284')" target="_blank">test</a>
-                            
-                            
-                            
-                            <br><br>
-                            
-                            <a href="javascript:window.open('https://maps.google.com?q=40.718217,-73.998284')" target="_blank"><img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=320x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-&markers=color:red%7Clabel:C%7C40.718217,-73.998284&path=color:0x0000ff|weight:5|40.702147,-74.015794|40.711614,-74.012318|40.718217,-73.998284" /></a>
-                            
-                            
-                            <br><br>
-                            
-                            
-                            -->
                             
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Bottom Toolbar-->
-            <div class="toolbar">
-                <div class="toolbar-inner">
-                    <!-- Toolbar links -->
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
                 </div>
             </div>
         </div>
