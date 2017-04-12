@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.google.map1" version="1.0.0" ios-CFBundleIdentifier="com.example.ios"  ios-CFBundleVersion="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.google.map" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>googlemap</name>
     <description>
         A basic Framework7 template for PhoneGap.
@@ -32,7 +32,10 @@
 			<string>comgooglemaps</string>
 			<string>whatsapp</string>
 		</array>
-	</config-file>  
+	</config-file> 
+	<config-file platform="ios" target="*-Info.plist" parent="PRODUCT_BUNDLE_IDENTIFIER" overwrite="true">  
+		<string>com.hotcourses.group.wubaseappid_test</string>
+	</config-file>  	
   
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
