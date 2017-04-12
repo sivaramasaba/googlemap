@@ -32,7 +32,7 @@
 			<string>comgooglemaps</string>
 			<string>whatsapp</string>
 		</array>
-	</config-file>  	
+	</config-file> 
   
     <preference name="DisallowOverscroll" value="true" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
