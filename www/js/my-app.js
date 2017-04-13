@@ -57,7 +57,7 @@ $$(document).on('click', '#test', function (e) {
         scheme,       // URI Scheme or Package Name 
         function() {  // Success callback 
             var addressLongLat = '53.22921909999999,-4.129498000000012';
-            var addressLongLat = '53.22921,-4.12949';
+            //var addressLongLat = '53.22921,-4.12949';
             if(platform == "android") {
                 window.open("geo:"+addressLongLat+"?q="+addressLongLat);
             } else if(platform == "ios") {
