@@ -64,7 +64,8 @@ $$(document).on('click', '#test', function (e) {
             } else if(platform == "ios") {
                 //var mapLocationUrl = 'http://maps.apple.com/?q='+addressLongLat+'&ll='+addressLongLat;
                 //var mapLocationUrl = 'http://maps.apple.com/?q=Bangor university@'+addressLongLat;
-                var mapLocationUrl = 'http://maps.apple.com/?q=Bangor university@'+addressLongLat+"&ll="+addressLongLat+"&z=1";
+                 var mapLocationUrl = "http://maps.apple.com/?q="+addressLongLat+"&ll="+addressLongLat+"&z=1";
+                //var mapLocationUrl = 'http://maps.apple.com/?q=Bangor university@'+addressLongLat+"&ll="+addressLongLat+"&z=1"; // final
                 //var mapLocationUrl = 'http://maps.apple.com/?q=Bangor university@'+addressLongLat+",5z"; // different
                 //var mapLocationUrl = 'http://maps.apple.com/?q=Bangor university@'+addressLongLat+"&z=5&d=50m";
                // var mapLocationUrl = 'http://maps.apple.com/?sll=50.894967,4.341626&z=1&q=Bangor university';
